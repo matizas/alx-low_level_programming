@@ -6,7 +6,6 @@
  * Description: prints the size of various data types
  * Return: 0 always when successful
 */
-
 int main(void)
 {
 	char a;
