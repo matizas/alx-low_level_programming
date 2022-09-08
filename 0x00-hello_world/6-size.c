@@ -3,7 +3,7 @@
 /**
  * main - program entry point
  *
- * Description: program that prints the size of various types on the computer it is compiled and run on
+ * Description: program that prints the size of various types on the computer
  * Return: 0 always when successful
 */
 
@@ -19,6 +19,7 @@ int main(void)
 	printf("Size of an int: %Id byte(s)\n", sizeof(i));
 	printf("Size of a long int: %Id byte(s)\n", sizeof(l));
 	printf("Size of a long long int: %Id byte(s)\n", sizeof(lg));
-	printf("Size of a float: %Id bytes(s)\n",sizeof(f));	
+	printf("Size of a float: %Id bytes(s)\n", sizeof(f));
+
 	return (0);
 }
