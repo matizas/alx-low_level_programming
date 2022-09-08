@@ -16,6 +16,7 @@ int main(void)
 	float e;
 
 	printf("Size of a char: %ld byte(s)\n", sizeof(a));
+	printf("Size of an integer: %ld byte(s)", sizeof(b));
 
 	return (0);
 }
