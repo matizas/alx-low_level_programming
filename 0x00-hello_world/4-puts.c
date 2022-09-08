@@ -1,8 +1,9 @@
 #include <stdio.h>
 /** 
- * program to display message on the sceen
- * main function is the entry point of the program
- * It always returns a zero
+ * main - program to display message on the sceen
+ * Description: main function is the entry point of the program
+ * The program always returns a zero
+ * Return (0)
 */
 int main(void)
 {
