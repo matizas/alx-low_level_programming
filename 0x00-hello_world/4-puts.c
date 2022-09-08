@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-/** 
+/*
  * main - program to display message on the sceen
  *
  * Description: main function is the entry point of the program
