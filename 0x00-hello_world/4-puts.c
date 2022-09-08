@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-/*
- * main - program to display message on the sceen
+/**
+ * main - program entry point
  *
- * Description: main function is the entry point of the program
- * The program always returns a zero
- * Return: 0
+ * Description: program to display message on the sceen
+ * 
+ * Return: 0 always when successful
 */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
