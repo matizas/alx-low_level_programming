@@ -15,5 +15,7 @@ int main(void)
 	long long d;
 	float e;
 
+	printf("Size of a char: %ld byte(s)\n", sizeof(a));
+
 	return (0);
 }
