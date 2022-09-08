@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /*
  * main - program to display message on the sceen
  *
