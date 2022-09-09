@@ -20,5 +20,5 @@ int main(void)
 {
 	test();
 
-	return (0);
+	/*return (0);*/
 }
