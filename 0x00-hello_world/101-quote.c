@@ -5,7 +5,6 @@
  *
  * Description: This program is used to print a message
  * The program is to print a errors
- * Return: 0 will be returned
  * test - is a function to print a message
  * Return: 1 test returns: to main
  */
