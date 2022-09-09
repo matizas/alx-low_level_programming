@@ -13,7 +13,6 @@
 int main(void)
 {
 	int n, l;
-	char str[20], c;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
