@@ -3,22 +3,23 @@
 /**
  * main - the entry point
  *
- * Description: This program is used to print a message
+ * Description: call a function test
  * The program is to print a errors
- * test - is a function to print a message
- * Return: 1 test returns: to main
+ * Return: 0 test returns: to main
+ *
+ * test - function to print a message
  */
 
 int test(void)
 {
 	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 
-	return (1);
+	return (0);
 }
 
 int main(void)
 {
 	test();
 
-	/*return (0);*/
+	return (1);
 }
