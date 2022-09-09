@@ -4,7 +4,8 @@
 /**
  * main - the entry point of a program
  *
- * Description: print last digit.
+ * Description: print last digit
+ * The program uses modulus.
  * Return: 0 if successful
  */
 
