@@ -7,7 +7,7 @@
  * The program is to print a errors
  * Return: 0 test returns: to main
  *
- * test - function to print a message
+ ** test - function to print a message
  */
 
 int test(void)
