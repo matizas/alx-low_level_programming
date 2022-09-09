@@ -11,7 +11,6 @@
 int main(void)
 {
 	int n;
-	char c;
 
 	n = 0;
 	while (n < 10)
