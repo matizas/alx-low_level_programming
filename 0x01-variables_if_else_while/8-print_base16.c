@@ -19,8 +19,10 @@ int main(void)
 		if (n < 10)
 			putchar(n + '0');
 		else
+		{
 			c = n + 87;
 			putchar(c);
+		}
 		n++;
 	}
 	putchar('\n');
