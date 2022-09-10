@@ -18,10 +18,10 @@ int main(void)
 		n = m;
 		while (n < 10)
 		{
-			y = n + 1;
+			y = 0;
 			while (y < 10)
 			{
-				x = m + 1;
+				x = y + 1;
 				while (x < 10)
 				{
 					putchar(n + '0');
