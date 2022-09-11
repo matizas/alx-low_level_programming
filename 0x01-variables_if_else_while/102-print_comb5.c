@@ -21,18 +21,22 @@ int main(void)
 			change = baseCounter % 10;
 			putchar(base + '0');
 			putchar(change + '0');
-			putchar(',');
 			putchar(' ');
+
 			base = increamentCounter / 10;
 			change = increamentCounter % 10;
 			putchar(base + '0');
 			putchar(change + '0');
+
+			if (base == 98 && change == 99)
+				break;
 			putchar(',');
 			putchar(' ');
 			increamentCounter++;
 		}
 		baseCounter++;
 	}
+	putchar('\n');
 	return (0);
 }
 
