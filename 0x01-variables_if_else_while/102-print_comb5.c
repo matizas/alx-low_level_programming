@@ -21,6 +21,7 @@ int main(void)
 			change = baseCounter % 10;
 			putchar(base + '0');
 			putchar(change + '0');
+			putchar(',');
 			putchar(' ');
 
 			base = increamentCounter / 10;
@@ -28,7 +29,7 @@ int main(void)
 			putchar(base + '0');
 			putchar(change + '0');
 
-			if (base == 98 && change == 99)
+			if (baseCounter == 98 && increamentCounter == 99)
 				break;
 			putchar(',');
 			putchar(' ');
