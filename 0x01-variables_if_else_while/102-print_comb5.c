@@ -32,7 +32,7 @@ int main(void)
 			if (baseCounter == 98 && increamentCounter == 99)
 				break;
 			putchar(',');
-			putchar(' ');
+			/*putchar(' ');*/
 			increamentCounter++;
 		}
 		baseCounter++;
