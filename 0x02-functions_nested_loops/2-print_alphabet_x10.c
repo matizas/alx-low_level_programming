@@ -7,17 +7,17 @@
 
 void print_alphabet_x10(void)
 {
-	int acsii_value, counter = 0;
+	int ascii_value, counter = 0;
 	char l;
 
 	while (counter < 10)
 	{
 		ascii_value = 97;
-		while (acsii_value <= 122)
+		while (ascii_value <= 122)
 		{
-			l = acsii_value;
+			l = ascii_value;
 			_putchar(l);
-			acsii_value++;
+			ascii_value++;
 		}
 		_putchar('\n');
 		counter++;
