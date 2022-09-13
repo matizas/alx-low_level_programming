@@ -2,6 +2,7 @@
 
 /**
 *_islower - this function determines if character is lower case
+*Description: the function has a parameter c
 *Return: 0 if successful
 */
 
