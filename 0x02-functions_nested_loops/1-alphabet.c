@@ -17,6 +17,4 @@ void print_aphabert(void)
 		acsii_value++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
