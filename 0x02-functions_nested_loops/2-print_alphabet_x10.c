@@ -5,7 +5,7 @@
 *Return: 0 if successful
 */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int acsii_value = 97, counter = 0;
 	char l;
@@ -21,6 +21,4 @@ void print_alphabet_x10(void);
 		_putchar('\n');
 		counter++;
 	}
-
-	return (0);
 }
