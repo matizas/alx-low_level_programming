@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_alphabert - this method print alphaberts
+ *print_alphabet - this function print alphaberts
  *Return: 0 if successful
  */
 
