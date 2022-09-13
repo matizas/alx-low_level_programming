@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *main - print alphaberts
- * *Return: 0 if successful
- * */
+ *print_alphabert - this method print alphaberts
+ *Return: 0 if successful
+ */
 
 void print_alphabert(void)
 {
