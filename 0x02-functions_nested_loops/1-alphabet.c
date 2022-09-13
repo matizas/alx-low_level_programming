@@ -12,8 +12,8 @@ int main(void)
 
 	while (acsii_value <= 122)
 	{
-		l = acsii_value
-			_putchar(l);
+		l = acsii_value;
+		_putchar(l);
 		acsii_value++;
 	}
 	_putchar('\n');
