@@ -5,7 +5,7 @@
  * *Return: 0 if successful
  * */
 
-int main(void)
+void print_aphabert(void)
 {
 	int acsii_value = 97;
 	char l;
