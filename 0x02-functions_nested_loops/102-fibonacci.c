@@ -22,13 +22,13 @@ void print_fib(int n)
 
 	printf("%ld, %ld, ", p, c);
 
-	while (counter <= n)
+	while (counter < n)
 	{
 		tmp = c;
 		c = c + p;
 		p = tmp;
 		
-		if (counter != n)
+		if (counter != n -1)
 			printf("%ld, ", c);
 		else
 			printf("%ld\n", c);
