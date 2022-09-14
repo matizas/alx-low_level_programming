@@ -9,10 +9,7 @@
 
 int main(void)
 {
-	int num;
-
-	scanf("Enter value: %i", &num);
-	print_sum(num);
+	int num = 1024;
 
 	return (0);
 }
