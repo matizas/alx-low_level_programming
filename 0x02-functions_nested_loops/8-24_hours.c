@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * * void jack_bauer - this function prints every minute
- * *No parameter passed in this function.
- * *Return: 0 if successfull.
- * */
+* void jack_bauer - this function prints every minute
+* No parameter passed in this function.
+* Return: 0 if successfull. 
+*/
 
 void jack_bauer(void)
 {
