@@ -36,6 +36,4 @@ void times_table(void)
 		r++;
 	}
 }
-_putchar(l + '0');
-return (l);
-}
+
