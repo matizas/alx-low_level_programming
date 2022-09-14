@@ -11,6 +11,8 @@ int main(void)
 {
 	int num = 1024;
 
+	print_sum(num);
+
 	return (0);
 }
 
