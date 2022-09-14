@@ -20,6 +20,8 @@ void times_table(void)
 			if (p < 10)
 			{
 				_putchar(p + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
@@ -27,9 +29,6 @@ void times_table(void)
 				f = p % 10;
 				_putchar(w + '0');
 				_putchar(f + '0');
-			}
-			if (c != 9)
-			{
 				_putchar(',');
 				_putchar(' ');
 			}
