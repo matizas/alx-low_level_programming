@@ -28,8 +28,11 @@ void times_table(void)
 				_putchar(w + '0');
 				_putchar(f + '0');
 			}
-			_putchar(',');
-			_putchar(' ');
+			if (c != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			c++;
 		}
 		_putchar('\n');
