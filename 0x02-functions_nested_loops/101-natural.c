@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
-* print_to_98 - this function print natural numbers.
+* print_sum - this function print natural numbers.
 * @n: has an integer parameter n.
 * Return: total if successfull.
 */
 
-void sum(int n)
+void print_sum(int n)
 {
 	int total = 0;
 
