@@ -16,6 +16,7 @@ int main(void)
 
 /**
 * print_fin - this function print fibonacci sequence.
+* Description: Print fibonacci sequence
 * @n: has an integer parameter n.
 * return: 0 if successfull.
 */
@@ -32,11 +33,11 @@ void print_fib(int n)
 		c = c + p;
 		p = tmp;
 
-		if (counter != n -1)
+		if (counter != n - 1)
 			printf("%ld, ", c);
 		else
 			printf("%ld\n", c);
 
-		counter++;   
+		counter++;
 	}
 }
