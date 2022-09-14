@@ -18,9 +18,9 @@ int main(void)
 
 void print_fib(int n)
 {
-	int p = 1, c = 2, counter = 2, tmp;
+	long p = 1, c = 2, counter = 2, tmp;
 
-	printf("%d, %d, ", p, c);
+	printf("%ld, %ld, ", p, c);
 
 	while (counter <= n)
 	{
@@ -29,9 +29,9 @@ void print_fib(int n)
 		p = tmp;
 		
 		if (counter != n)
-			printf("%d, ", c);
+			printf("%ld, ", c);
 		else
-			printf("%d\n", c);
+			printf("%ld\n", c);
 		
 		counter++;   
 	}
