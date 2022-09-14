@@ -28,7 +28,7 @@ void print_sum_fib(long n)
 
 	total = p + c;
 
-	while (c < n)
+	while (total < n)
 	{
 		tmp = c;
 		c = c + p;
