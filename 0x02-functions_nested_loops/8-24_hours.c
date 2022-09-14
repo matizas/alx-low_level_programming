@@ -21,11 +21,14 @@ void jack_bauer(void)
 			_putchar(hh + '0');
 			_putchar(mm + '0');
 			_putchar(':');
+
 			hh = m / 10;
 			mm = m % 10;
+
 			_putchar(hh + '0');
 			_putchar(mm + '0');
 			_putchar('\n');
+
 			m++;
 		}
 		h++;
