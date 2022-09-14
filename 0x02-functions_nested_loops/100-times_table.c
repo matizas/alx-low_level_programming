@@ -8,8 +8,11 @@ void levelThree(int);
 *@n: the function recieve data from the calling program
 *Return: 0 if successful
 *levelOne - the function print required spaces for single digits
+*Description - the function do not return a value
 *levelTwo - the function prints required spaces for double digits
+*Description - the function does not return a value
 *levelThree - the function prints required spaces for three digits.
+*Description - the function does not return a value.
 */
 
 void print_times_table(int n)
