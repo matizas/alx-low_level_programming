@@ -3,7 +3,9 @@
 
 int main(void)
 {
-	print_fib();
+	int numTerms = 50;
+
+	print_fib(numTerms);
 
 	return (0);
 }
@@ -14,19 +16,19 @@ int main(void)
 * return: a + b if successfull.
 */
 
-void print_fib(void)
+void print_fib(int n);
 {
 	int p = 1, c = 2, counter = 2, tmp;
 
 	printf("%d, %d, ", p, c);
 
-	while (counter <= 50)
+	while (counter <= n)
 	{
 		tmp = c;
 		c = c + p;
 		p = tmp;
 		
-		if (counter != 50)
+		if (counter != n)
 			printf("%d, ", c);
 		else
 			printf("%d\n", c);
