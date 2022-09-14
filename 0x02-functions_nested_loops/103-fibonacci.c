@@ -29,7 +29,7 @@ void print_sum_fib(long n)
 	total = c;
 	countTerm = 2;
 
-	while (c < n)
+	while (total < n)
 	{
 		countTerm++;
 
