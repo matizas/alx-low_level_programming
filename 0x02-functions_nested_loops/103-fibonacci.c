@@ -23,23 +23,20 @@ int main(void)
 
 void print_sum_fib(long n)
 {
-	int p = 1, c = 1;
-	int tmp, total, countTerm;
+	int p = 1, c = 2;
+	int tmp, total;
 
 	total = c;
-	countTerm = 2;
 
-	while (total <= n)
+	while (c <= n)
 	{
-		countTerm++;
-
 		tmp = c;
 		c = c + p;
 		p = tmp;
 
-		if ((countTerm <= n) && (countTerm % 2 == 0)) 
+		if (c % 2 == 0) 
 		{
-			total += c;
+			total = total + c;
 		}
 	}
 	printf("%d\n", total);
