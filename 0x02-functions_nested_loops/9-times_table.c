@@ -13,32 +13,26 @@ void times_table(void)
 	r = 0;
 	while(r < 10)
 	{
-		c = 0;
+		_putchar('0');
+		c = 1;
 		while (c < 10)
 		{
+			_putchar(',');
+			_putchar(' ');
+
 			p = r * c;
+
 			if (p < 10)
 			{
-				_putchar(p + '0');
-				if (c != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar(' ');
 			}
 			else
 			{
 				w = p / 10;
-				f = p % 10;
 				_putchar(w + '0');
-				_putchar(f + '0');
-				if (c != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
 			}
+			f = p % 10;
+			_putchar(f + '0');
 			c++;
 		}
 		_putchar('\n');
