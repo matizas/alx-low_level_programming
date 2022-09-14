@@ -11,7 +11,7 @@ void levelThree(int);
 
 void print_times_table(int n)
 {
-	int w, f, r, c, p;
+	int r, c, p;
 
 	if (n >= 0 && n < 16)
 	{
