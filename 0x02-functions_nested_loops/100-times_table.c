@@ -6,13 +6,7 @@ void levelThree(int);
 /**
 *print_times_table - this function prints n times table
 *@n: the function recieve data from the calling program
-*Return: 0 if successful
-*levelOne - the function print required spaces for single digits
-*Description - the function do not return a value
-*levelTwo - the function prints required spaces for double digits
-*Description - the function does not return a value
-*levelThree - the function prints required spaces for three digits.
-*Description - the function does not return a value.
+*Return: 0 if successful.
 */
 
 void print_times_table(int n)
@@ -54,12 +48,22 @@ void print_times_table(int n)
 	}
 }
 
+/**
+ * levelOne - this function print spaces for a single digit
+ * Description - printing single spaces
+ */
+
 void levelOne(int n)
 {
 	_putchar(' ');
 	_putchar(' ');
 	_putchar(n + '0');
 }
+
+/**
+ * levelTwo - this function print double spaces
+ * Description: printing double spaces
+ */
 
 void levelTwo(int n)
 {
@@ -71,6 +75,12 @@ void levelTwo(int n)
 	f = n % 10;
 	_putchar(f + '0');
 }
+
+/**
+ * levelThree - this function print three spaces
+ * Description - printing three digits
+ */
+
 void levelThree(int n)
 {
 	int w, f;
