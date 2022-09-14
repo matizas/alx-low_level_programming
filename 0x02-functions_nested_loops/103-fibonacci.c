@@ -34,7 +34,7 @@ void print_sum_fib(long n)
 		c = c + p;
 		p = tmp;
 
-		if (c % 2 == 0) 
+		if (c % 2 == 0)
 		{
 			total = total + c;
 		}
