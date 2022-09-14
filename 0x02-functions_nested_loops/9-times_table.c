@@ -2,7 +2,7 @@
 
 /**
 *times_table - this function prints 9 times table
-*@n: the function has a parameter n of type integer
+*the function does not recieve data from the calling program
 *Return: 0 if successful
 */
 
