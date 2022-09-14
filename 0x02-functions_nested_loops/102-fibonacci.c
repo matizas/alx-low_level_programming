@@ -16,7 +16,7 @@ int main(void)
 * return: a + b if successfull.
 */
 
-void print_fib(int n);
+void print_fib(int n)
 {
 	int p = 1, c = 2, counter = 2, tmp;
 
