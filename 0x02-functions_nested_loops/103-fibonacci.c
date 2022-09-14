@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	long numTerms = 4000000;
+	int numTerms = 4000000;
 
 	print_sum_fib(numTerms);
 
@@ -23,8 +23,8 @@ int main(void)
 
 void print_sum_fib(long n)
 {
-	long p = 1, c = 1;
-	long tmp, total, countTerm;
+	int p = 1, c = 1;
+	int tmp, total, countTerm;
 
 	total = c;
 	countTerm = 2;
