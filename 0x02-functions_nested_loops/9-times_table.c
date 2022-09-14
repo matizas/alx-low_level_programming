@@ -35,6 +35,7 @@ void times_table(void)
 				if (p < 10)
 				{
 					_putchar(' ');
+					_putchar(' ');
 				}
 			}
 			c++;
