@@ -9,22 +9,22 @@
 void print_times_table(int n)
 {
 	int w, f, r, c, p;
-	
+
 	if (n >= 0 && n < 16)
 	{
 		r = 0;
 		while (r <= n)
 		{
 			_putchar('0');
-			
+
 			c = 1;
 			while (c <= n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				
+
 				p = r * c;
-				
+
 				if (p < 10)
 				{
 					_putchar(' ');
