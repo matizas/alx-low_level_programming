@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,19 +7,19 @@
 * Return: total if successfull.
 */
 
-int sum(void)
+void sum(int n)
 {
-	int n = 1024, total = 0;
+	int total = 0;
 
-	while (n > 2)
+	while (n > 2 && n < 1024)
 	{
 		if ((n % 3 == 0) || (n % 5 == 0))
 		{
 			total = total + n;
 		}
 		
-		n--;
+		n++;
 	}
 	
-	return (total);
+	printf("%d\n", total);
 }
