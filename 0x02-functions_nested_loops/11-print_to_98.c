@@ -40,6 +40,9 @@ void print_to_98(int n)
 				_putchar(r + '0');
 			}
 		}
+		else if(n < 0)
+		{
+			if(n
 		n++;
 	}
 	_putchar('\n');
