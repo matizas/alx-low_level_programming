@@ -6,7 +6,7 @@
 * return: 0 if successfull.
 */
 
-void print_to_98(int n);
+void print_to_98(int n)
 {
 	int w, r;
 
