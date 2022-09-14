@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
 *void times_table - this function prints 9 times table
