@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
-* print_sum - this function print natural numbers.
-* @n: has an integer parameter n.
-* Return: total if successfull.
-*/
+ * main - entry point
+ * Return: 0 if successful
+ */
 
 int main(void)
 {
@@ -15,6 +13,12 @@ int main(void)
 
 	return (0);
 }
+
+/**
+ * print_sum - this function print natural numbers
+ * @n: recieves a parameter of type integer
+ * Return: does not return a value
+ */
 
 void print_sum(int n)
 {
@@ -26,9 +30,7 @@ void print_sum(int n)
 		{
 			total = total + n;
 		}
-		
 		n++;
 	}
-	
 	printf("%d\n", total);
 }
