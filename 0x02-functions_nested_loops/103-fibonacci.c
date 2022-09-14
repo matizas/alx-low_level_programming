@@ -1,38 +1,41 @@
+#include <stdio.h>
 #include "main.h"
+/**
+ * main - entry point
+ * Return: 0 if successful
+ */
+
+int main(void)
+{
+	long numTerms = 4000000;
+
+	print_fib(numTerms);
+
+	return (0);
+}
 
 /**
-* print_to_98 - this function print natural numbers.
-* @n: has an integer parameter n.
-* return: a + b if successfull.
+* print_fib - this function print total of fibonacci terms..
+* Description: Print fibonacci sequence
+* @n: has a long parameter n.
+* return: 0 if successfull.
 */
 
-void fib(void)
+void print_fib(long n)
 {
-	int p = 1, c = 2, counter = 2, t, sum = 2;
+	long p = 1, c = 2, counter = 2, tmp, total;
 
-	_putchar(p + '0');
-	_putchar(',');
-	_putchar(' ');
+	total = p + c;
 
-	_putchar(c + '0');
-	_putchar(',');
-	_putchar(' ');
-
-	while (c < 4000000)
+	while (c < n)
 	{
-		t = c;
+		tmp = c;
 		c = c + p;
-		p = t;
+		p = tmp;
 
-		_putchar(c + '0');
-		_putchar(',');
-		_putchar(' ');
+		total = total + c;
 
-		if (c % 2 == 0)
-		{
-			sum = sum + c;
-		}
-		
-		counter++;   
+		counter++;
 	}
+	printf("%ld\n", total);
 }
