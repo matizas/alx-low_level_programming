@@ -1,4 +1,4 @@
-#include "main.h"
+nclude "main.h"
 
 /**
 *print_last_digit - this function prints the last digit
@@ -8,12 +8,12 @@
 
 int print_last_digit(int n)
 {
-	 int l = n % 10;
+	int l = n % 10;
 
-	 if (l < 0)
-	 {
-		 l = l * -1;
-	 }
-	 _putchar(l + '0');
-	 return (l);
+	if (l < 0)
+	{
+		l = l * -1;
+	}
+	_putchar(l + '0');
+	return (l);
 }
