@@ -7,7 +7,7 @@
 * Return: a + b if successfull.
 */
 
-int add(int, int)
+int add(int n, int m)
 {
-	return (a + b);
+	return (n + m);
 }
