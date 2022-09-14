@@ -2,8 +2,8 @@
 
 /**
 * add - this function adds two integers.
-* @a: the first integer parameter
-* @b: the second integer parameter;
+* @n: the first integer parameter
+* @m: the second integer parameter;
 * Return: a + b if successfull.
 */
 
