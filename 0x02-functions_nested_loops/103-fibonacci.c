@@ -23,7 +23,7 @@ int main(void)
 
 void print_sum_fib(long n)
 {
-	long p = 1, c = 2;
+	long p = 1, c = 1;
 	long tmp, total, countTerm;
 
 	total = c;
@@ -37,7 +37,7 @@ void print_sum_fib(long n)
 		c = c + p;
 		p = tmp;
 
-		if (countTerm % 2 != 0)
+		if (countTerm % 2 == 0)
 		{
 			total = total + c;
 		}
