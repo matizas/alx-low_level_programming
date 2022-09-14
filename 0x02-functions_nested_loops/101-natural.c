@@ -7,6 +7,13 @@
 * Return: total if successfull.
 */
 
+int main(void)
+{
+	int num;
+	scanf("Enter value: %i", &num);
+	print_sum(num);
+}
+
 void print_sum(int n)
 {
 	int total = 0;
