@@ -25,10 +25,12 @@ void print_times_table(int n)
 			if (p < 10)
 			{
 				_putchar(' ');
+				_putchar(' ');
 				_putchar(p + '0');
 			}
 			else if (p < 100)
 			{
+				_putchar(' ');
 				w = p / 10;
 				_putchar(w + '0');
 				f = p % 10;
