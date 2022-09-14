@@ -2,7 +2,7 @@
 
 /**
 *print_times_table - this function prints n times table
-*@n - the function recieve data from the calling program
+*@n: the function recieve data from the calling program
 *Return: 0 if successful
 */
 
