@@ -39,7 +39,7 @@ void print_sum_fib(long n)
 
 		if (countTerm % 2 == 0)
 		{
-			total = total + c;
+			total += c;
 		}
 	}
 	printf("%d\n", total);
