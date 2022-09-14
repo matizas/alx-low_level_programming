@@ -24,13 +24,13 @@ void print_sum(int n)
 {
 	int total = 0;
 
-	while (n > 2 && n < 1024)
+	while (n > 2)
 	{
+		n--;
 		if ((n % 3 == 0) || (n % 5 == 0))
 		{
 			total = total + n;
 		}
-		n++;
 	}
 	printf("%d\n", total);
 }
