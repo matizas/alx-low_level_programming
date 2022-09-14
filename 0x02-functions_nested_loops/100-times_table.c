@@ -45,8 +45,6 @@ void print_times_table(int n)
 				f = f % 10;
 				_putchar(f + '0');
 			}
-			else
-			{
 			c++;
 		}
 		_putchar('\n');
