@@ -15,7 +15,7 @@ int main(void)
 }
 
 /**
-* print_fin - this function print fibonacci sequence.
+* print_fib - this function print fibonacci sequence.
 * Description: Print fibonacci sequence
 * @n: has an integer parameter n.
 * return: 0 if successfull.
