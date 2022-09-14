@@ -23,7 +23,8 @@ int main(void)
 
 void print_sum_fib(long n)
 {
-	long p = 1, c = 2, counter = 2, tmp, total;
+	long p = 1, c = 2, 
+	long tmp, total;
 
 	total = p + c;
 
@@ -34,8 +35,6 @@ void print_sum_fib(long n)
 		p = tmp;
 
 		total = total + c;
-
-		counter++;
 	}
 	printf("%ld\n", total);
 }
