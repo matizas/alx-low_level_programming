@@ -20,7 +20,6 @@ void times_table(void)
 			if (p < 10)
 			{
 				_putchar(p + '0');
-				_putchar(' ');
 			}
 			else
 			{
@@ -32,6 +31,7 @@ void times_table(void)
 			if (c != 9)
 			{
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 			}
 			c++;
