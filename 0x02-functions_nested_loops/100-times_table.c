@@ -7,6 +7,9 @@ void levelThree(int);
 *print_times_table - this function prints n times table
 *@n: the function recieve data from the calling program
 *Return: 0 if successful
+*levelOne - the function print required spaces for single digits
+*levelTwo - the function prints required spaces for double digits
+*levelThree - the function prints required spaces for three digits.
 */
 
 void print_times_table(int n)
