@@ -42,5 +42,5 @@ void print_sum_fib(long n)
 			total = total + c;
 		}
 	}
-	printf("%ld\n", total);
+	printf("%d\n", total);
 }
