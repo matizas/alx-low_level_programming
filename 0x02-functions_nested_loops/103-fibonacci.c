@@ -26,10 +26,10 @@ void print_sum_fib(long n)
 	long p = 1, c = 2;
 	long tmp, total, countTerm;
 
-	total = c;
+	total = p;
 	countTerm = 2;
 
-	while (total < n)
+	while (c < n)
 	{
 		countTerm++;
 
@@ -38,7 +38,9 @@ void print_sum_fib(long n)
 		p = tmp;
 
 		if (countTerm % 2 == 0)
+		{
 			total = total + c;
+		}
 	}
 	printf("%ld\n", total);
 }
