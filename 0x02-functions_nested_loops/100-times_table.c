@@ -51,6 +51,7 @@ void print_times_table(int n)
 /**
  * levelOne - this function print spaces for a single digit
  * Description - printing single spaces
+ * @n: the function recieves a parameter of type integer
  */
 
 void levelOne(int n)
@@ -63,6 +64,7 @@ void levelOne(int n)
 /**
  * levelTwo - this function print double spaces
  * Description: printing double spaces
+ * @n: the function recieves a parameter of type integer
  */
 
 void levelTwo(int n)
@@ -79,6 +81,7 @@ void levelTwo(int n)
 /**
  * levelThree - this function print three spaces
  * Description - printing three digits
+ * @n: the function recieves a parameter of type integer
  */
 
 void levelThree(int n)
