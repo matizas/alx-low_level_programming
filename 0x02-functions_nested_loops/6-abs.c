@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _abs(int) - this function prints the sign of a number
+* _abs - this function prints the sign of a number
 * @n: the function has a parameter n of type integer
 * Return: 0 if successful
 */
