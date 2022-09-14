@@ -1,4 +1,7 @@
 #include "main.h"
+void levelOne(int);
+void levelTwo(int);
+void levelThree(int);
 
 /**
 *print_times_table - this function prints n times table
@@ -27,27 +30,15 @@ void print_times_table(int n)
 
 				if (p < 10)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(p + '0');
+					levelOne(p);
 				}
 				else if (p < 100)
 				{
-					_putchar(' ');
-					w = p / 10;
-					_putchar(w + '0');
-					f = p % 10;
-					_putchar(f + '0');
+					levelTwo(p);
 				}
 				else
 				{
-					w = p / 100;
-					_putchar(w + '0');
-					f = p % 100;
-					w = f / 10;
-					_putchar(w + '0');
-					f = f % 10;
-					_putchar(f + '0');
+					levelThree(p);
 				}
 				c++;
 			}
@@ -57,3 +48,32 @@ void print_times_table(int n)
 	}
 }
 
+void levelOne(int n)
+{
+	_putchar(' ');
+	_putchar(' ');
+	_putchar(n + '0');
+}
+
+void levelTwo(int n)
+{
+	int w, f;
+
+	_putchar(' ');
+	w = n / 10;
+	_putchar(w + '0');
+	f = n % 10;
+	_putchar(f + '0');
+}
+void levelThree(int n)
+{
+	int w, f;
+
+	w = n / 100;
+	_putchar(w + '0');
+	f = n % 100;
+	w = f / 10;
+	_putchar(w + '0');
+	f = f % 10;
+	_putchar(f + '0');
+}
