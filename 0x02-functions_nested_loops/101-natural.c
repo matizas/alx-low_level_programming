@@ -10,8 +10,11 @@
 int main(void)
 {
 	int num;
+
 	scanf("Enter value: %i", &num);
 	print_sum(num);
+
+	return (0);
 }
 
 void print_sum(int n)
