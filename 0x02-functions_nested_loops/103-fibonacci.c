@@ -9,19 +9,19 @@ int main(void)
 {
 	long numTerms = 4000000;
 
-	print_fib(numTerms);
+	print_sum_fib(numTerms);
 
 	return (0);
 }
 
 /**
-* print_fib - this function print total of fibonacci terms..
+* print_sum_fib - this function print total of fibonacci terms..
 * Description: Print fibonacci sequence
 * @n: has a long parameter n.
 * return: 0 if successfull.
 */
 
-void print_fib(long n)
+void print_sum_fib(long n)
 {
 	long p = 1, c = 2, counter = 2, tmp, total;
 
