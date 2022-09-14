@@ -23,7 +23,7 @@ int main(void)
 
 void print_sum_fib(long n)
 {
-	long p = 1, c = 2, 
+	long p = 1, c = 2; 
 	long tmp, total;
 
 	total = p + c;
