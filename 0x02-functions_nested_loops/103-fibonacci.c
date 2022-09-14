@@ -24,17 +24,21 @@ int main(void)
 void print_sum_fib(long n)
 {
 	long p = 1, c = 2;
-	long tmp, total;
+	long tmp, total, countTerm;
 
-	total = p + c;
+	total = c;
+	countTerm = 2;
 
-	while (total < n)
+	while (c < n)
 	{
+		countTerm++;
+
 		tmp = c;
 		c = c + p;
 		p = tmp;
 
-		total = total + c;
+		if (countTerms % 2 == 0)
+			total = total + c;
 	}
 	printf("%ld\n", total);
 }
