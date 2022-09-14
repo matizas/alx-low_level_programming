@@ -3,7 +3,8 @@
 
 int main(void)
 {
-	fib();
+	print_fib();
+
 	return (0);
 }
 
@@ -13,7 +14,7 @@ int main(void)
 * return: a + b if successfull.
 */
 
-void fib(void)
+void print_fib(void)
 {
 	int p = 1, c = 2, counter = 2, tmp;
 
