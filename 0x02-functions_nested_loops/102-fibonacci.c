@@ -1,4 +1,11 @@
+#include <stdio.h>
 #include "main.h"
+
+int main(void)
+{
+	fib();
+	return (0);
+}
 
 /**
 * print_to_98 - this function print natural numbers.
@@ -8,25 +15,20 @@
 
 void fib(void)
 {
-	int p = 1, c = 2, counter = 2, t;
+	int p = 1, c = 2, counter = 2, tmp;
 
-	_putchar(p + '0');
-	_putchar(',');
-	_putchar(' ');
-
-	_putchar(c + '0');
-	_putchar(',');
-	_putchar(' ');
+	printf("%d, %d, ", p, c);
 
 	while (counter <= 50)
 	{
-		t = c;
+		tmp = c;
 		c = c + p;
-		p = t;
+		p = tmp;
 		
-		_putchar(c + '0');
-		_putchar(',');
-		_putchar(' ');
+		if (counter != 50)
+			printf("%d, ", c);
+		else
+			printf("%d\n", c);
 		
 		counter++;   
 	}
