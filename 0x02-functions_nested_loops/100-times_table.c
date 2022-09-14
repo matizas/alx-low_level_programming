@@ -11,7 +11,7 @@ void print_times_table(int n)
 	int w, f, r, c, p;
 
 	r = 0;
-	while (r < n)
+	while (r <= n)
 	{
 		_putchar('0');
 		c = 1;
