@@ -24,6 +24,7 @@ int main(void)
 void print_fib_terms(int n)
 {
 	long p = 1, c = 2, tmp;
+	long w, r;
 	int counter = 2;
 
 	printf("%ld, %ld, ", p, c);
@@ -34,10 +35,27 @@ void print_fib_terms(int n)
 		c = c + p;
 		p = tmp;
 
-		if (counter != n - 1)
-			printf("%ld, ", c);
+		if(counter != n - 1)
+		{
+			if (counter < 91)
+			{
+				printf("%ld, ", c);
+			}
+			else
+			{
+				w = c / 1000;
+				r = c % 1000;
+				printf("%ld", w);
+				printf("%ld",r);
+			}
+		}
 		else
-			printf("%ld\n", c);
+		{
+			w = c / 1000;
+			r = c % 1000;
+			printf("%ld", w);
+			printf("%ld\n", r);
+		}
 
 		counter++;
 	}
