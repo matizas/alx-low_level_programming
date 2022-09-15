@@ -29,7 +29,7 @@ void print_fib_terms(int n)
 
 	printf("%ld, %ld, ", p, c);
 
-	while (counter < n - 7)
+	while (counter < n - 6)
 	{
 		tmp = c;
 		c = c + p;
