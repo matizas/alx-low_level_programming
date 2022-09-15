@@ -43,7 +43,7 @@ void print_fib_terms(int n)
 	print_final_sprint(p, c);
 }
 
-void print_final_sprint(long long m, long long n)
+void print_final_sprint(long m, long n)
 {
 	/*unsigned long long w, r, x, y;
 	int counter = 92;
