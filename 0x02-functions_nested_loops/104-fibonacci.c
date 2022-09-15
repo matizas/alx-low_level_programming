@@ -9,19 +9,19 @@ int main(void)
 {
 	int numTerms = 98;
 
-	print_fib98(numTerms);
+	print_fib_terms(numTerms);
 
 	return (0);
 }
 
 /**
-* print_fib98 - this function print fibonacci sequence.
+* print_fib_terms - this function print fibonacci sequence.
 * Description: Print fibonacci sequence
 * @n: has an integer parameter n.
 * return: 0 if successfull.
 */
 
-void print_fib98(int n)
+void print_fib_terms(int n)
 {
 	long p = 1, c = 2, counter = 2, tmp;
 
