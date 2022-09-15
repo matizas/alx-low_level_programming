@@ -46,7 +46,7 @@ void print_fib_terms(int n)
 				w = c / 1000;
 				r = c % 1000;
 				printf("%ld", w);
-				printf("%ld",r);
+				printf("%ld, ",r);
 			}
 		}
 		else
