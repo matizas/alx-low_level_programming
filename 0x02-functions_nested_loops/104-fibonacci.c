@@ -23,7 +23,7 @@ int main(void)
 
 void print_fib_terms(int n)
 {
-	unsigned long int p = 1, c = 2, tmp;
+	long int p = 1, c = 2, tmp;
 	int counter = 2;
 
 	printf("%ld, %ld, ", p, c);
