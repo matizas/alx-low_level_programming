@@ -24,7 +24,7 @@ int main(void)
 void print_fib_terms(int n)
 {
 	unsigned long p = 1, c = 2, tmp;
-	unsigned long w, r;
+	//unsigned long w, r;
 	int counter = 2;
 
 	printf("%ld, %ld, ", p, c);
