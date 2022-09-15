@@ -37,25 +37,25 @@ void print_fib_terms(int n)
 
 		if(counter != n - 1)
 		{
-			if (counter < 91)
+			if (counter < 93)
 			{
 				printf("%ld, ", c);
 			}
-			else
+			/*else
 			{
 				w = c / 1000;
 				r = c % 1000;
 				printf("%ld", w);
 				printf("%ld, ",r);
-			}
+			}*/
 		}
-		else
+		/*else
 		{
 			w = c / 1000;
 			r = c % 1000;
 			printf("%ld", w);
 			printf("%ld\n", r);
-		}
+		}*/
 
 		counter++;
 	}
