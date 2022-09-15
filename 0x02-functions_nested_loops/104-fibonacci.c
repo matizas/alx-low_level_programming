@@ -39,4 +39,39 @@ void print_fib_terms(int n)
 
 		counter++;
 	}
+
+	print_final_sprint(p, c);
+}
+
+void print_final_sprint(long long m, long long n)
+{
+	/*unsigned long long w, r, x, y;
+	int counter = 92;
+
+	w = m / 1000000000;
+	r = m % 1000000000;
+
+	x = n / 1000000000;
+	y = n % 1000000000;*/
+
+	long long next, tmp;
+
+	while (counter < 99)
+	{
+		next = m + n;
+		tmp = n;
+		m = tmp;
+		n = next;
+
+		if (counter != 98)
+		{
+			printf("%lld, ", next);
+		}
+		else
+		{
+			printf("%lld\n", next);
+		}
+		counter++;
+	}
+
 }
