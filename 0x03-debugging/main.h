@@ -20,4 +20,5 @@ void print_sum_fib(long);
 void print_fib_terms(int);
 int largest_number(int a, int b, int c);
 void positive_or_negative(int);
+void print_remaining_days(int month, int day, int year);
 #endif
