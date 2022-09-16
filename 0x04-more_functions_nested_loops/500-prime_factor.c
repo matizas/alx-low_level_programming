@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include "main.h"
 void prime_factors(long int);
 
@@ -28,26 +27,33 @@ int main(void)
 void prime_factors(long int n)
 {
 
-	long int max, i;
+	long int i, j, f;
+	long int w = n;
 
-	while (n % 2 == 0)
+	for (i = 1; i <= w; i++)
 	{
-		max = 2;
-		n = n / 2;
-	}
-
-	for (i = 3; i <= sqrt(n); i = i + 2)
-	{
-		while (n % i == 0)
+		f = 0;
+		for (j = 1; j <= i; j++)
 		{
-			max = i;
-			n = n / i;
+			if (i % j == 0)
+			{
+				f++;
+			}
+		}
+		if (f == 2)
+		{
+			while (w >= 2)
+			{
+				if (w % i == 0)
+				{
+					printf("%ld", i);
+					w = w / i;
+				}
+				else
+				{
+					break;
+				}
+			}
 		}
 	}
-
-	if (n > 2)
-	{
-		max = n;
-	}
-	printf("%ld\n", max);
 }
