@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-void prime_factors(long long);
+void prime_factors(long int);
 
 /**
  * main - to call a method fizz_buzz
@@ -10,7 +10,7 @@ void prime_factors(long long);
 
 int main(void)
 {
-	long long num = 612852475143;
+	long int num = 612852475143;
 
 	prime_factors(num);
 
@@ -24,11 +24,11 @@ int main(void)
  * Return: does not return a value
  */
 
-void prime_factors(long long n)
+void prime_factors(long int n)
 {
 
-	long long i, j, f;
-	long long w = n;
+	long int i, j, f;
+	long int w = n;
 
 	for (i = 1; i <= w; i++)
 	{
@@ -46,7 +46,7 @@ void prime_factors(long long n)
 			{
 				if (w % i == 0)
 				{
-					printf("%lld", i);
+					printf("%ld", i);
 					w = w / i;
 				}
 				else
