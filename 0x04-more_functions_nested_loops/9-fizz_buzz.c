@@ -23,7 +23,7 @@ int main(void)
 
 void print_fizz_buzz(void)
 {
-	int i, j;
+	int i;
 	char a[] = "Fizz";
 	char b[] = "Buzz";
 	char ab[] = "FizzBuzz";
