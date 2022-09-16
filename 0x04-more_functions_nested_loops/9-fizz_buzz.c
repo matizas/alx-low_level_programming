@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-void print_fizz_buzz(void);
 
 /**
  * main - to call a method fizz_buzz
@@ -11,21 +10,18 @@ void print_fizz_buzz(void);
 int main(void)
 {
 	int i, j;
-	char a[] = "Fizz";
-	char b[] = "Buzz";
-	char ab[] = "FizzBuzz";
 
 
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s ", ab);
+			printf("%s ", "FizzBuzz");
 
 		else if (i % 5 == 0)
-			printf("%s ", b);
+			printf("%s ", "Buzz");
 
 		else if (i % 3 == 0)
-			printf("%s ", a);
+			printf("%s ", "Fizz");
 
 		else
 			printf("%d ", i);
