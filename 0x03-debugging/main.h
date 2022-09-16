@@ -19,4 +19,5 @@ void print_fib(int);
 void print_sum_fib(long);
 void print_fib_terms(int);
 void test_positive_or_negative(void)
+int largest_number(int a, int b, int c)	
 #endif
