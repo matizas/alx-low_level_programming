@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-void fizz_buzz(void);
+void print_fizz_buzz(void);
 
 /**
  * main - to call a method fizz_buzz
@@ -10,18 +10,18 @@ void fizz_buzz(void);
 
 int main(void)
 {
-	fizz_buzz();
+	print_fizz_buzz();
 
 	return (0);
 }
 
 /**
- * * fizz_buzz - print a square
+ * print_fizz_buzz - print a square
  *
  * Return: does not return a value
  */
 
-void fizz_buzz(void)
+void print_fizz_buzz(void)
 {
 	int i, j;
 	char a[] = "Fizz";
