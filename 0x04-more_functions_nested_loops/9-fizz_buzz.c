@@ -2,6 +2,19 @@
 #include "main.h"
 
 /**
+ * main - to call a method fizz_buzz
+ *
+ * Return: 0 if successful
+ */
+
+int main(void)
+{
+	fizz_buzz();
+
+	return (0);
+}
+
+/**
  * * fizz_buzz - print a square
  *
  * Return: does not return a value
@@ -26,4 +39,5 @@ void fizz_buzz(void)
 		else
 			printf("%d ", i);
 	}
+	printf("\n");
 }
