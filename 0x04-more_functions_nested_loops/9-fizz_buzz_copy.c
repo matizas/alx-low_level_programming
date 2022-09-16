@@ -10,6 +10,19 @@ void print_fizz_buzz(void);
 
 int main(void)
 {
+	print_fizz_buzz();
+
+	return (0);
+}
+
+/**
+ * print_fizz_buzz - print a square
+ *
+ * Return: does not return a value
+ */
+
+void print_fizz_buzz(void)
+{
 	int i, j;
 	char a[] = "Fizz";
 	char b[] = "Buzz";
@@ -31,6 +44,4 @@ int main(void)
 			printf("%d ", i);
 	}
 	printf("\n");
-
-	return (0);
 }
