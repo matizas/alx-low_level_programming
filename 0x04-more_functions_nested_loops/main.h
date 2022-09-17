@@ -33,7 +33,7 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_fizz_buzz(void);
 void print_triangle(int size);
-void print_number(long int n);
+void print_number(int n);
 void prime_factors(long int);
-void print_display(long int);
+void print_display(int);
 #endif
