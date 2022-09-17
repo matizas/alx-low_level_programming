@@ -16,7 +16,9 @@ void print_number(int n)
 		positiveNum = n * -1;
 	}
 	else
+	{
 		positiveNum = n;
+	}
 
 	print_display(positiveNum);
 }
