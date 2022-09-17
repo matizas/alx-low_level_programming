@@ -1,13 +1,14 @@
 #include "main.h"
+void print_display(int);
 
 /**
- * prime_number - print an integer value
+ * print_number - print an integer value
  * @n: integer parameter
  */
 
 void print_number(int n)
 {
-	int m, numWeight, countDigits, positiveNum;
+	int firstValue, secondValue, positiveNum;
 
 	if (n < 0)
 	{
@@ -15,6 +16,31 @@ void print_number(int n)
 		positiveNum = n * -1;
 	}
 
+	if (positiveNum > 9999)
+	{
+		firstValue = positiveNum / 1000;
+		print_display(firstValue);
+
+		secondValue = positiveNum % 1000;
+		print_display(secondValue);
+	}
+	else
+		print_display(positiveNum);
+}
+
+/**
+ * print_display - to display digits
+ * @n: integere paramemter
+ */
+
+void print_display(int n)
+{
+	int m;
+	int countDigits;
+	int positiveNum;
+	int numWeight;
+
+	positiveNum = n;
 	countDigits = 0;
 	do {
 		n = n / 10;
