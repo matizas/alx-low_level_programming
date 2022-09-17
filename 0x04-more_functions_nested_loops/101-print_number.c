@@ -15,6 +15,9 @@ void print_number(int n)
 		_putchar('-');
 		positiveNum = n * -1;
 	}
+	else
+		positiveNum = n;
+
 	print_display(positiveNum);
 }
 
