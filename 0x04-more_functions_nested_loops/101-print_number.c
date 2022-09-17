@@ -1,14 +1,14 @@
 #include "main.h"
-void print_display(long int);
+void print_display(int);
 
 /**
  * print_number - print an integer value
  * @n: integer parameter
  */
 
-void print_number(long int n)
+void print_number(int n)
 {
-	long int firstValue, secondValue, positiveNum;
+	int firstValue, secondValue, positiveNum;
 
 	if (n < 0)
 	{
@@ -34,12 +34,12 @@ void print_number(long int n)
  * @n: integere paramemter
  */
 
-void print_display(long int n)
+void print_display(int n)
 {
-	long int m;
-	long int countDigits;
-	long int positiveNum;
-	long int numWeight;
+	int m;
+	int countDigits;
+	int positiveNum;
+	int numWeight;
 
 	positiveNum = n;
 	countDigits = 0;
