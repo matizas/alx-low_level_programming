@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 void print_display(int);
 
@@ -13,11 +12,21 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar(45);
-		positiveNum = abs(n);
+		_putchar('-');
+		positiveNum = n * -1;
 	}
 
-	print_display(positiveNum);
+
+	if (positiveNum > 9999)
+	{
+		firstValue = positiveNum / 1000;
+		print_display(firstValue);
+
+		secondValue = positiveNum % 1000;
+		print_display(secondValue);
+	}
+	else
+		print_display(positiveNum);
 }
 
 /**
