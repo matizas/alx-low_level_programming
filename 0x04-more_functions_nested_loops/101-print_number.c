@@ -7,24 +7,31 @@
 
 void print_number(int n)
 {
-	unsigned int w;
+	int m, numWeight, countDigits, positiveNum;
 
 	if (n < 0)
 	{
-		w = -n;
-		_putchar('_');
-	}
-	else
-	{
-		w = n;
+		_putchar('-');
+		positiveNum = n * -1;
 	}
 
-	if (w / 10)
+	countDigits = 0;
+	do {
+		n = n / 10;
+		countDigits++;
+	} while (n != 0);
+
+	numWeight = 1;
+	for (m = 1; m <= countDigits - 1; m++)
+		numWeight = numWeight * 10;
+
+	while (positiveNum > 10)
 	{
-		w = w / 10;
-		print_number(w);
+		m = positiveNum / numWeight;
+		_putchar(m + '0');
+		positiveNum = positiveNum % numWeight;
+		numWeight = numWeight / 10;
 	}
 
-	w = w % 10;
-	_putchar(w + '0');
+	_putchar(positiveNum + '0');
 }
