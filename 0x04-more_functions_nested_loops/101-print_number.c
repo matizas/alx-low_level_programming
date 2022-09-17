@@ -15,12 +15,18 @@ void print_number(int n)
 		_putchar('-');
 		positiveNum = n * -1;
 	}
-	else
-	{
-		positiveNum = n;
-	}
 
-	print_display(positiveNum);
+
+	if (positiveNum > 9999)
+	{
+		firstValue = positiveNum / 1000;
+		print_display(firstValue);
+
+		secondValue = positiveNum % 1000;
+		print_display(secondValue);
+	}
+	else
+		print_display(positiveNum);
 }
 
 /**
