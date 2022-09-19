@@ -1,5 +1,5 @@
 #include "main.h"
-int _strlen(char *s)
+int _strlen(char *s);
 
 /**
  * puts2 - print to stdio a string
