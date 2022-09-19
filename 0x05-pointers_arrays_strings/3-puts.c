@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
  * _puts - print to stdio a string
  *
@@ -9,5 +9,20 @@
 
 void _puts(char *str)
 {
-	puts(str);
+	int i, flag;
+
+	i = 0;
+	flag = 0;
+
+	while (!flag)
+	{
+		if (str[i] != '\0')
+		{
+			_putchar(str[i]);
+			i++;
+		}
+		else
+			flag = 1;
+	}
+	_putchar('\n');
 }
