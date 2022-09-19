@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _puts2 - print to stdio a string
+ * puts2 - print to stdio a string
  *
  * @str: reference parameter to recieve a string.
  * Return: does not return a value
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i, flag;
 
