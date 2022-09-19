@@ -1,4 +1,3 @@
-#include <string.h>
 #include "main.h"
 
 /**
@@ -10,4 +9,20 @@
 
 int _strlen(char *s)
 {
+	int i, flag;
+
+	i = 0;
+	flag = 0;
+
+	while (!flag)
+	{
+		if (s[i] != '\0')
+		{
+			i++;
+		}
+		else
+			flag = 1;
+	}
+
+	return (i);
 }
