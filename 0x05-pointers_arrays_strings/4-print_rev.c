@@ -8,7 +8,7 @@
 
 void print_rev(char *s)
 {
-	int i, flag;
+	int i;
 
 	i = _strlen(s) - 1;
 
