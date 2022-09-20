@@ -12,7 +12,7 @@
 int main(void)
 {
 	int ascii, i, j, iRandom;
-	char passwd[150];
+	char passwd[100];
 	time_t t;
 
 	i = 0;
