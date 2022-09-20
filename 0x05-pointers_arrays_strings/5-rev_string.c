@@ -14,7 +14,7 @@ void rev_string(char *s)
 {
 	_5puts(s);
 
-	print_5rev(s);
+	/*print_5rev(s);*/
 }
 
 /**
