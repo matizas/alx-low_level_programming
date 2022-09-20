@@ -12,7 +12,7 @@ void print_5rev(char *s);
 
 void rev_string(char *s)
 {
-	_5puts(s);
+	/*_5puts(s);*/
 
 	/*print_5rev(s);*/
 }
