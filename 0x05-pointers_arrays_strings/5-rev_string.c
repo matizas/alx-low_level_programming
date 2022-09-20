@@ -9,13 +9,13 @@ void print_5rev(char *s);
  * @s: reference parameter to store a string
  * Return: does not return a value
  */
-
+/*
 void rev_string(char *s)
 {
 	/*_5puts(s);*/
 
 	/*print_5rev(s);*/
-}
+}*/
 
 /**
  * print_5rev - reversing a string
