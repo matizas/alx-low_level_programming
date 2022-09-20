@@ -1,6 +1,7 @@
 #include "main.h"
-int _strlen(char *s);
-void _puts(char *str);
+int _5strlen(char *s);
+void _5puts(char *str);
+void print_5rev(char *s);
 
 /**
  * rev_string - reversing a string
@@ -11,23 +12,23 @@ void _puts(char *str);
 
 void rev_string(char *s)
 {
-	/*_puts(s);*/
+	_5puts(s);
 
-	print_rev(s);
+	print_5rev(s);
 }
 
 /**
- * print_rev - reversing a string
+ * print_5rev - reversing a string
  *
  * @s: reference parameter to store a string
  * Return: does not return a value
  */
 
-void print_rev(char *s)
+void print_5rev(char *s)
 {
 	int i;
 
-	i = _strlen(s) - 1;
+	i = _5strlen(s) - 1;
 
 	while (i >= 0)
 	{
@@ -38,13 +39,13 @@ void print_rev(char *s)
 }
 
 /**
- * _strlen - to count number of characters
+ * _5strlen - to count number of characters
  *
  * @s: reference parameter to recieve a string
  * Return: an integer, the Length or the number of characters.
  */
 
-int _strlen(char *s)
+int _5strlen(char *s)
 {
 	int i, flag;
 
@@ -65,13 +66,13 @@ int _strlen(char *s)
 }
 
 /**
- * _puts - print to stdio a string
+ * _5puts - print to stdio a string
  *
  * @str: reference parameter to recieve a string.
  * Return: does not return a value
  */
 
-void _puts(char *str)
+void _5puts(char *str)
 {
 	int i, flag;
 
