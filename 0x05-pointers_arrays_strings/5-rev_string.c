@@ -1,7 +1,7 @@
 #include "main.h"
 int _strlen(char *s);
 /**
- * print_rev - reversing a string
+ * rev_string - reversing a string
  *
  * @s: reference parameter to store a string
  * Return: does not return a value
