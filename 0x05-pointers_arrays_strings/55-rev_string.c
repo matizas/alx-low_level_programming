@@ -15,21 +15,6 @@ void rev_string(char *s)
 
 	_puts(s);
 
-	print_rev(s);
-
-}
-
-/**
- * print_rev - reversing a string
- *
- * @s: reference parameter to store a string
- * Return: does not return a value
- */
-
-void print_rev(char *s)
-{
-	int i;
-
 	i = _strlen(s) - 1;
 
 	while (i >= 0)
