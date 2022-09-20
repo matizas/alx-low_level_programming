@@ -11,12 +11,9 @@ void _puts(char *str);
 
 void rev_string(char *s)
 {
-	int i;
-
 	_puts(s);
 
 	print_rev(s);
-
 }
 
 /**
