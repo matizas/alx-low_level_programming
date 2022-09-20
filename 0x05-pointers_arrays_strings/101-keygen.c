@@ -18,7 +18,7 @@ int main(void)
 	i = 0;
 	ascii = 2772;
 
-	srand((int)time(&t));
+	srand((int) time(&t));
 	while (ascii > 126)
 	{
 		iRandom = rand() % 126;
