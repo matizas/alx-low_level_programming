@@ -12,9 +12,10 @@ int _strlen(char *s);
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int l_dest, i;
+	int l_dest, i, m, l_src;
 
 	l_dest = _strlen(dest);
+	l_src = _strlen(src);
 
 	if (n > l_dest)
 	{
@@ -26,6 +27,14 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 		i++;
+	}
+
+	if (n > l_src)
+	{
+		for (m = l_src; m <= n - l_src; m++)
+		{
+			dest[m] = 0;
+		}
 	}
 
 	return (dest);
