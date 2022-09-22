@@ -20,9 +20,9 @@ int _strcmp(char *s1, char *s2)
 		if (s1[i] != s2[i])
 		{
 			if (s1[i] > s2[i])
-				r_value = 15;
+				r_value = s1[i] - s2[i];
 			else
-				r_value = -15;
+				r_value = s1[i] - s2[i];
 			break;
 		}
 		i++;
