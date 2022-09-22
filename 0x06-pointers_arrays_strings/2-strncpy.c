@@ -12,18 +12,19 @@ int _strlen(char *s);
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int l_src, i;
+	int l_src, l_dest, i;
 
 	l_src = _strlen(src);
+	l_dest = _strlen(dest);
 
 	if (n > l_src)
 	{
 		n = l_src;
 	}
 
-	if (n > sizeof(dest))
+	if (n > l_dest)
 	{
-		n = sizeof(dest);
+		n = l_dest;
 	}
 
 	i = 0;
