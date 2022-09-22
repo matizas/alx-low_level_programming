@@ -31,7 +31,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (n > l_src)
 	{
-		for (m = l_src + 1; m <= n - l_src; m++)
+		for (m = l_src; m <= n - l_src; m++)
 		{
 			dest[m] = '\0';
 		}
