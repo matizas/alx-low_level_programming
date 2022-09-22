@@ -1,5 +1,4 @@
 #include "main.h"
-int _strlen(char *s);
 
 /**
 * *_strncpy - to merge two strings
@@ -12,52 +11,20 @@ int _strlen(char *s);
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int l_dest, i, m, l_src;
-
-	l_dest = _strlen(dest);
-	l_src = _strlen(src);
-
-	if (n > l_dest)
-	{
-		n = l_dest;
-	}
+	int i;
 
 	i = 0;
-	while (i < n)
+	while (i < n && *(src + i))
 	{
-		dest[i] = src[i];
+		*(dest + i) = *(src + i);
 		i++;
 	}
 
-	if (n > l_src)
+	while (i < n)
 	{
-		for (m = l_src + 1; m <= n - l_src; m++)
-		{
-			dest[m] = '\0';
-		}
+		dest[i] = '\0';
+		i++;
 	}
 
 	return (dest);
 }
-
-/**
-* _strlen - count the number of characters in a string
-*
-* @s: ref parameter
-* Return: number of characters
-*/
-
-int _strlen(char *s)
-{
-	int strLength;
-
-	strLength = 0;
-
-	while (s[strLength] != '\0')
-	{
-		strLength++;
-	}
-
-	return (strLength);
-}
-
