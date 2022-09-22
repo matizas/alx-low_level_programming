@@ -28,7 +28,7 @@ char *cap_string(char *s)
 			case 123:
 			case 125:
 				{
-					if (s[i + 1] >= 97 && s[i + 1] <= 122 && s[i + 1] != '\0')
+					if (s[i + 1] >= 97 && s[i + 1] <= 122)
 					{
 						s[i + 1] = s[i + 1] - 32;
 					}
@@ -37,6 +37,11 @@ char *cap_string(char *s)
 		}
 
 		i++;
+
+		if (s[0] >= 97 && s[0] <= 122)
+		{
+			s[0] = s[0] - 32;
+		}
 	}
 
 	return (s);
