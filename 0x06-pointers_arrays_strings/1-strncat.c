@@ -12,9 +12,13 @@ int _strlen(char *s);
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int l_dest, i;
+	int l_dest, l_src, i;
 
 	l_dest = _strlen(dest);
+	l_src = _strlen(src);
+
+	if (n > l_src)
+		n = l_src;
 
 	i = 0;
 	while (i < n)
