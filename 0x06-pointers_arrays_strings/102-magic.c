@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - using pointers to access array elements
- *
- * Return: if successful 0
- */
-
 int main(void)
 {
 	int n;
