@@ -34,8 +34,10 @@ char *_strchr(char *s, char c)
 		}
 		index++;
 	}
-
-	s = d;
+	if (d == '\0')
+		*s = '\0';
+	else
+		s = d;
 
 	return (s);
 }
