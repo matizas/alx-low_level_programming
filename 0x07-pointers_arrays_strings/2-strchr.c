@@ -34,8 +34,12 @@ char *_strchr(char *s, char c)
 		}
 		index++;
 	}
-
-	s = d;
+	j = 0;
+	while (d[j] != '\0')
+	{
+		s[j] = d[j];
+		j++;
+	}
 	while (j < length)
 	{
 		s[j + 1] = '\0';
