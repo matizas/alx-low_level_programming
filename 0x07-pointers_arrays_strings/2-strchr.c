@@ -38,7 +38,7 @@ char *_strchr(char *s, char c)
 	s = d;
 	while (j < length)
 	{
-		s[j] = '\0';
+		s[j + 1] = '\0';
 		j++;
 	}
 
