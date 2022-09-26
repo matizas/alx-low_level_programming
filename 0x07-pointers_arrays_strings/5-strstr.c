@@ -6,7 +6,7 @@
  *
  * @haystack: first ref parameter
  * @needle: second ref parameter
- * Return: address of substring
+ * Return: address to the found substring
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -14,9 +14,6 @@ char *_strstr(char *haystack, char *needle)
 	int i, j;
 
 	i = 0;
-
-	if (!*haystack)
-		return (NULL);
 
 	while (*haystack)
 	{
@@ -32,4 +29,5 @@ char *_strstr(char *haystack, char *needle)
 			return (&haystack[i]);
 		i++;
 	}
+	return (NULL);
 }
