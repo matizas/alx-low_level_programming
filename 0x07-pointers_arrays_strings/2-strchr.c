@@ -11,7 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	int index, bfound, i, j, length;
-	char d[10000000];
+	char d[1000000];
 
 	index = 0;
 	bfound = 0;
