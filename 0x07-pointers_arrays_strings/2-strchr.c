@@ -35,19 +35,13 @@ char *_strchr(char *s, char c)
 		index++;
 	}
 
-	j = 0;
-	while (d[j] != '\0')
-	{
-		*(s + j) = *(d + j);
-		j++;
-	}
-	s[j] = '\0';
+	for (length = 0; d[length] != '\0'; length++)
+		;
 
-	while (j < length)
-	{
-		s[j + 1] = '\0';
-		j++;
-	}
+	if (length == 0)
+		s = '\0';
+	else
+		s = d;
 
 	return (s);
 }
