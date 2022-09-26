@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * *_strchr - search for a char in a string
@@ -7,35 +8,16 @@
  * @c: value parameter
  * Return: the address of the modified string
  */
-
 char *_strchr(char *s, char c)
 {
-	int index, bfound, i, j, length;
-	char d[1000000];
-
-	index = 0;
-	bfound = 0;
-
-	for (length = 0; s[length] != '\0'; length++)
-		;
-
-	while (s[index] != '\0' && bfound == 0)
+	while (!0)
 	{
-		if (s[index] == c)
+		if (*s++ == c)
 		{
-			j = 0;
-			for (i = index; i < length; i++)
-			{
-				d[j] = s[i];
-				j++;
-			}
-
-			bfound = 1;
+			return (s - 1);
 		}
-		index++;
+
+		if (*s == '\0')
+			return (NULL);
 	}
-
-	s = d;
-
-	return (s);
 }
