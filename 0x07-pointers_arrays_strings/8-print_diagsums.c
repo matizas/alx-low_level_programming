@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 		r = r + size + 1;
 	}
 
-	c = 0;
+	c = size - 1;
 	sum_left = 0;
 	while (c < (size * size - 1))
 	{
