@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - program to determine number of arguments
@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int num, digitsWeight = 1;
-	
+
 	(void)argv;
 	argc--;
 	num = argc;
@@ -23,10 +23,11 @@ int main(int argc, char *argv[])
 
 	while (num > 10)
 	{
-		_putchar((num / digitsWeight) + '0');
+		putchar((num / digitsWeight) + '0');
 		num %= digitsWeight;
 		digitsWeight /= 10;
 	}
-	_putchar(num + '0');
+	putchar(num + '0');
+	putchar('\n');
 	return (0);
 }
