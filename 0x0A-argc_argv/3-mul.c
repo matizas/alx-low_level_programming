@@ -19,11 +19,10 @@ int main(int argc, char *argv[])
 
 		p = a * b;
 		printf("%d\n", p);
-		return (0);
 	}
 	else
 	{
 		printf("ERROR\n");
-		return (1);
 	}
+	return (0);
 }
