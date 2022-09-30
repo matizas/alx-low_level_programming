@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - program to determine number of arguments
@@ -10,11 +10,13 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
+	(void)argc;
 
 	while (argv[0][i] != '\0')
 	{
-		_putchar(argv[0][i]);
+		putchar(argv[0][i]);
 		i++;
 	}
+	putchar('\n');
 	return (0);
 }
