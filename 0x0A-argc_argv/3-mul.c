@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, a = 0, b = 0, p;
+	long int i, j, a = 0, b = 0, p;
 
 	if (argc == 3)
 	{
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
 		p = a * b;
-		printf("%d\n", p);
+		printf("%ld\n", p);
 	}
 	else
 	{
