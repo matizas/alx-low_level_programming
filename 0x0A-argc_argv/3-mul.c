@@ -2,40 +2,25 @@
 #include <stdlib.h>
 
 /**
- * main - program to determine number of arguments
- * @argc: value parameter to store number of arguments
- * @argv: ref parameter to store a string of arguments
- * Return: does not return anything
+ * main - calculate product of two numbers
+ * @argc: number of arguments
+ * @argv: an array of arguments
+ * Return: 1 if exactly two integer arguments else 0.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	long int i, j, a = 0, b = 0, p;
+	int a = 0, b = 0;
 
-	if (argc > 2)
+	if (argc == 3)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			for (j = 0; argv[i][j] != '\0'; j++)
-			{
-				if (argv[i][j] != 45)
-				{
-					if (argv[i][j] < 48 || argv[i][j] > 57)
-					{
-						printf("ERROR\n");
-						return (1);
-					}
-				}
-			}
-		}
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
-		p = a * b;
-		printf("%ld\n", p);
+		printf("%d\n", a * b);
 	}
 	else
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		return (1);
 	}
 	return (0);
