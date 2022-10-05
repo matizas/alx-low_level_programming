@@ -42,5 +42,8 @@ int **alloc_grid(int width, int height)
 	if (row == height)
 		return (arrNum);
 	else
+	{
+		free(arrNum);
 		return (NULL);
+	}
 }
