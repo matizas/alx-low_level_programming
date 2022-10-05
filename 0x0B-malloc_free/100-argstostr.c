@@ -25,7 +25,6 @@ char *argstostr(int ac, char **av)
 			lenStr++;
 			i++;
 		}
-		lenStr++;
 		Words++;
 	}
 	lenStr += ac;
