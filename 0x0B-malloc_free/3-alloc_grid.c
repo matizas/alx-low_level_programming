@@ -34,5 +34,11 @@ int **alloc_grid(int width, int height)
 			arrNum[row][col] = 0;
 		}
 	}
-	return (arrNum);
+	if (row < height)
+	{
+		free(arrNum);
+		return (NULL);
+	}
+	else
+		return (arrNum);
 }
