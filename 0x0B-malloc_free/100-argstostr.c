@@ -40,10 +40,7 @@ char *argstostr(int ac, char **av)
 			str[k] = av[Words][i];
 			k++;
 		}
-		if (str[k] == '\0')
-		{
-			str[k++] = '\n';
-		}
+		str[k++] = '\n';
 	}
 	return (str);
 }
