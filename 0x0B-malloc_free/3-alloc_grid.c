@@ -5,7 +5,7 @@
  * **alloc_grid - two dimensional array
  * @width: columns of the 2D array
  * @height: rows of the 2D array
- * Return: 0
+ * Return: pointer to the array and NULL
  */
 
 int **alloc_grid(int width, int height)
@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	arrNum = malloc(height * sizeof(int));
+	arrNum = malloc(sizeof(int*) * height);
 	if (arrNum == NULL)
 		return (NULL);
 
@@ -26,7 +26,10 @@ int **alloc_grid(int width, int height)
 		if (arrNum == NULL)
 		{
 			while (row >= 0)
-				free(arrNum[row--]);
+			{
+				free(arrNum[row]);
+				row--;
+			}
 			free(arrNum);
 			return (NULL);
 		}
