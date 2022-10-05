@@ -15,8 +15,14 @@ int numWords(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == ' ')
+		if (*str == ' ')
+			str++;
+		else
+		{
+			for  (; str[i] != ' ' && str[i] != '\0'; i++)
+				str++;
 			count++;
+		}
 	}
 	return (count);
 }
