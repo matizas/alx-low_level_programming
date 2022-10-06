@@ -1,7 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-unsigned int _strlen(char *);
-
 
 /**
  * *string_nconcat - to allocate space required for joined strings
@@ -13,30 +11,19 @@ unsigned int _strlen(char *);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int l_dest, l_src, i;
+	unsigned int i, k;
 	char *dest;
 
-	l_dest = _strlen(s1);
-	l_src = _strlen(s2);
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 
-	dest = malloc((n + l_dest) * sizeof(char) + 1);
+	dest = malloc((n + i) * sizeof(char) + 1);
 
 	if (dest == NULL)
 		return (NULL);
-
-	if (n > l_src)
-		n = l_src;
-
-	i = 0;
-	while (i < n && s2[i] != '\0')
-	{
-		s1[l_dest] = s2[i];
-		l_dest++;
-		i++;
-	}
 
 	i = 0;
 	while (s1[i] != '\0')
@@ -44,23 +31,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		dest[i] = s1[i];
 		i++;
 	}
+
+	k = 0;
+	while (k < n && s2[k] != '\0')
+	{
+		dest[i] = s2[k];
+		i++;
+		k++;
+	}
 	dest[i] = '\0';
 
 	return (dest);
-}
-
-/**
- * _strlen - to determine the length of a string
- * @s: address to string to count characters from
- * Return: length of string
- */
-
-unsigned int _strlen(char *s)
-{
-	int strLength = 0;
-
-	while (s[strLength] != '\0')
-		strLength++;
-
-	return (strLength);
 }
