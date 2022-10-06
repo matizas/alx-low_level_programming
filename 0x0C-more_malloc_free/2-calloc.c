@@ -16,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	total_size = sizeof(char) * nmemb;
+	total_size = sizeof(int) * nmemb;
 	arrNum = malloc(total_size);
 	if (arrNum == NULL)
 		return (NULL);
