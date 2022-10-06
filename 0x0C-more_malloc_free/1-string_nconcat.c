@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = l_src;
 
 	i = 0;
-	while (i < n)
+	while (i < n && s2[i] != '\0')
 	{
 		s1[l_dest] = s2[i];
 		l_dest++;
@@ -44,7 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		dest[i] = s1[i];
 		i++;
 	}
-	dest++ ='\0';
+	dest[i] = '\0';
 
 	return (dest);
 }
