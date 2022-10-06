@@ -16,12 +16,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	total_size = sizeof(char) * size * nmemb;
+	total_size = size * nmemb;
 	arrNum = malloc(total_size);
 	if (arrNum == NULL)
 		return (NULL);
 
-	for (row = 0; row < nmemb; row++)
+	for (row = 0; row < (size * nmemb); row++)
 		arrNum[row] = 0;
 
 	return (arrNum);
