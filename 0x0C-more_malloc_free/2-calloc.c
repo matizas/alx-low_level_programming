@@ -11,13 +11,12 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *arrNum;
-	unsigned int row, total_size;
+	unsigned int row;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	total_size = size * nmemb;
-	arrNum = malloc(total_size);
+	arrNum = malloc(nmemb * size);
 	if (arrNum == NULL)
 		return (NULL);
 
