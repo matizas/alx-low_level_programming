@@ -104,7 +104,8 @@ int *mul(char *num1, int len_1, char *num2, int len_2, int len_r)
 	while (i < len_1)
 	{
 		mul_result = _calloc(sizeof(int), len_r);
-		i2 = len_2 - 1, digit = (len_r - 1 - i);
+		i2 = len_2 - 1;
+		digit = (len_r - 1 - i);
 		if (!is_digit(num1[i1]))
 			return (NULL);
 		carry = 0;
@@ -120,7 +121,8 @@ int *mul(char *num1, int len_1, char *num2, int len_2, int len_r)
 		}
 		add_arrays(mul_result, sum_result, len_r);
 		free(mul_result);
-		i++, i1--;
+		i++; 
+		i1--;
 	}
 	return (sum_result);
 }
@@ -162,14 +164,18 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-	len_1 = str_len(argv[1]), len_2 = str_len(argv[2]);
+	len_1 = str_len(argv[1]);
+	 len_2 = str_len(argv[2]);
 	len_r = len_1 + len_2;
 	if (len_1 < len_2)
 		num1 = argv[1], num2 = argv[2];
 	else
 	{
-		num1 = argv[2], num2 = argv[1];
-		temp = len_2, len_2 = len_1, len_1 = temp;
+		num1 = argv[2];
+		num2 = argv[1];
+		temp = len_2;
+		len_2 = len_1;
+		len_1 = temp;
 	}
 	sum_result = mul(num1, len_1, num2, len_2, len_r);
 	if (sum_result == NULL)
