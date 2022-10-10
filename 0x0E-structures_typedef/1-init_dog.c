@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 
 /**
  * init_dog - to initialise the fields of the object dog
