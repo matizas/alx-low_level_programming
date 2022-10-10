@@ -1,5 +1,4 @@
 #include "main.h"
-#include "dog.h"
 
 /**
  * init_dog - to initialise the fields of the object dog
@@ -12,11 +11,7 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d)
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
-
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
