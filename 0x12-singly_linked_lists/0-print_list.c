@@ -30,6 +30,7 @@ size_t print_list(const list_t *h)
 		}
 		_putchar('\n');
 		count++;
+		h = h->next;
 	}
 	return (count);
 }
