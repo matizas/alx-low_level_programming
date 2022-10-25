@@ -5,7 +5,7 @@
  * @head: stores the address of the first node.
  * @index: index of the node.
  *
- * Return: nth node. If node does not exist, returns NULL.
+ * Return: nth node, NULL if not available.
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -18,5 +18,3 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	}
 	return (head);
 }
-
-#include "lists.h"
