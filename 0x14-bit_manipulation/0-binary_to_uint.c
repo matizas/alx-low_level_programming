@@ -10,14 +10,13 @@ int getPower(int);
 
 int getPower(int i)
 {
-    int k, prod = 1;
+	int k, prod = 1;
 
-    for (k = 1; k < i; k++)
-    {
-        prod = prod * 2;
-    }
-
-    return prod;
+	for (k = 1; k < i; k++)
+	{
+		prod = prod * 2;
+	}
+	return (prod);
 }
 
 /**
@@ -28,30 +27,29 @@ int getPower(int i)
 
 unsigned int binary_to_uint(const char *b)
 {
-    int i = 0, k, bit, denary_number = 0;
+	int i = 0, k, bit, denary_number = 0;
 
-    if (b == NULL)
-        return 0;
+	if (b == NULL)
+		return (0);
 
-    while (b[i] != '\0')
-    {
-        if (b[i] != '0' && b[i] != '1')
-            return 0;
-      i++;
-    }
+	while (b[i] != '\0')
+	{
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+		i++;
+	}
 
-     k = i--;
-    i = 0;
-    while (b[i] != '\0')
-    {
-        if (b[i] == '1')
-        {
-            denary_number = denary_number + getPower(k);
-        }
+	k = i--;
+	i = 0;
 
-        k--;
-        i++;
-    }
-
-return denary_number;
+	while (b[i] != '\0')
+	{
+		if (b[i] == '1')
+		{
+			denary_number = denary_number + getPower(k);
+		}
+		k--;
+		i++;
+	}
+	return (denary_number);
 }
