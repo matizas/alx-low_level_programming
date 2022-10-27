@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+int getPower(int);
 
 /**
  * getPower - to calculate the product of 2 power of a number
